@@ -1,10 +1,10 @@
 # Web Development Project 4 - CATS
 
-Submitted by: **Your Name Here**
+Submitted by: **Ty Beller**
 
-This web app: **insert description**
+This web app: **Lets you look at pictures of cats on the internet. You can ban cat features that you don't want to see.**
 
-Time spent: **X** hours spent in total
+Time spent: **3** hours spent in total
 
 ## Required Features
 
