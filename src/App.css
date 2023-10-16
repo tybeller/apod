@@ -21,6 +21,13 @@
 
 .apod-image {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1500px;
   height: auto;
+}
+
+.attr-holder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
 }
