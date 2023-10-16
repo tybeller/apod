@@ -50,25 +50,28 @@ function App() {
 
   return (
     <>
-      <h1>NASA APOD</h1>
-
-      <div className='thing-holder'>
+      <div className='thing-holder page-body'>
+        <h1>CATS</h1>
 
         {nasaData 
         ? 
           <div className='thing-holder'>
+            <h2>Meet the lovely {nasaData[0].id}!</h2>
             <div className='attr-holder'>
               <button onClick={() => banItem(nasaData[0].breeds[0].name)}>{nasaData[0].breeds[0].name}</button>
               <button onClick={() => banItem(nasaData[0].breeds[0].origin)}>{nasaData[0].breeds[0].origin}</button>
               <button onClick={() => banItem(nasaData[0].breeds[0].weight.imperial)}>{nasaData[0].breeds[0].weight.imperial} lbs</button>    
             </div>
             <img className='apod-image' src={nasaData[0].url} />
+            <p>{nasaData[0].breeds[0].description}</p>
           </div>
         : <></>
         }
 
         <button onClick={getNewImage}>Get New Image</button>
 
+        {nasaData 
+        ? 
         <div className='thing-holder ban'>
           <h2>Ban List</h2>
           <div className='attr-holder'>
@@ -79,6 +82,8 @@ function App() {
             ))}
           </div>
         </div>
+        : <></>
+        }
       </div>
 
       

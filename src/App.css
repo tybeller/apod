@@ -6,9 +6,10 @@
 }
 
 .page-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: #282c34;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: inset 0 0 3px 0 rgba(0,0,0,0.5);
 }
 
 .thing-holder {
@@ -21,7 +22,9 @@
 
 .apod-image {
   width: 100%;
-  max-width: 1500px;
+  max-width: 800px;
+  max-height: 800px;
+  width: auto;
   height: auto;
 }
 
@@ -30,13 +33,16 @@
   flex-direction: row;
   align-items: center;
   gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .ban{
-  background-color: black;
+  background-color: darkslateblue;
   padding: 1rem;
   margin: 1rem;
   border-radius: 1rem;
   color: white;
-  width: 1500px;
+  width: 700px;
+  box-shadow: inset 0 0 10px 0 rgba(0,0,0,0.5);
 }
